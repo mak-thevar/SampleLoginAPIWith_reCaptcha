@@ -46,6 +46,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseStaticFiles(); // Serves files from wwwroot by default
+
 // Migrate Database
 using (var scope = app.Services.CreateScope())
 {

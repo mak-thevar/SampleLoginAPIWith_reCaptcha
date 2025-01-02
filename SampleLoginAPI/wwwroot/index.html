@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Modern Design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdlhakqAAAAAC86y9F6E_fcFhQ0yI0y5faDDhIm"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p>Please login to continue</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                    <div class="line"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                    <div class="line"></div>
+                </div>
+                <button type="submit" class="login-button">
+                    <span>Login</span>
+                </button>
+                <p class="switch-form">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h3>Login Successful!</h3>
+            <p>Welcome back!</p>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
